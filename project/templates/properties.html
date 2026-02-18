@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties - HomeSpace</title>
+
+  <!-- CSS -->
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/css/main.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="bg-white shadow-sm py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h3 class="m-0">HomeSpace</h3>
+    <nav>
+      <a href="/" class="me-3">Home</a>
+      <a href="/about" class="me-3">About</a>
+      <a href="/properties" class="fw-bold text-success">Properties</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== PAGE TITLE ===== -->
+<section class="py-4 bg-light text-center">
+  <div class="container">
+    <h2>Our Properties</h2>
+    <p class="text-muted">Browse our latest listings</p>
+  </div>
+</section>
+
+<!-- ===== PROPERTY CARDS ===== -->
+<section class="container py-5">
+  <div class="row g-4">
+
+    <!-- Property 1 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='assets/img/real-estate/property-exterior-2.webp') }}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">$1,850,000</h5>
+          <p class="card-text">Luxury Modern Villa with Pool</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 2 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='assets/img/real-estate/property-interior-1.webp') }}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">$975,000</h5>
+          <p class="card-text">Charming Family Home</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property 3 -->
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='assets/img/real-estate/property-exterior-5.webp') }}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">$725,000</h5>
+          <p class="card-text">Contemporary Waterfront Townhouse</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-light text-center py-4">
+  <p class="m-0">© 2026 HomeSpace. All Rights Reserved.</p>
+</footer>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+</body>
+</html>

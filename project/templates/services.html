@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - HomeSpace</title>
+
+  <!-- CSS -->
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='assets/css/main.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="bg-white shadow-sm py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h3 class="m-0">HomeSpace</h3>
+    <nav>
+      <a href="/" class="me-3">Home</a>
+      <a href="/about" class="me-3">About</a>
+      <a href="/properties" class="me-3">Properties</a>
+      <a href="/services" class="fw-bold text-success">Services</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== PAGE TITLE ===== -->
+<section class="py-4 bg-light text-center">
+  <div class="container">
+    <h2>Our Services</h2>
+    <p class="text-muted">We provide complete real estate solutions</p>
+  </div>
+</section>
+
+<!-- ===== SERVICES SECTION ===== -->
+<section class="container py-5">
+  <div class="row g-4">
+
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='assets/img/real-estate/property-exterior-3.webp') }}" class="card-img-top">
+        <div class="card-body">
+          <h5>Buy Your Dream Home</h5>
+          <p>Personalized property search, neighborhood analysis and full closing assistance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='assets/img/real-estate/property-exterior-7.webp') }}" class="card-img-top">
+        <div class="card-body">
+          <h5>Sell at Maximum Value</h5>
+          <p>Professional marketing, photography and expert negotiation support.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='assets/img/real-estate/property-interior-5.webp') }}" class="card-img-top">
+        <div class="card-body">
+          <h5>Premium Rentals</h5>
+          <p>Tenant screening, flexible lease terms and 24/7 customer support.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <img src="{{ url_for('static', filename='assets/img/real-estate/features-2.webp') }}" class="card-img-top">
+        <div class="card-body">
+          <h5>Investment Consulting</h5>
+          <p>Market analysis, ROI projections and portfolio diversification guidance.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="bg-success text-white text-center py-5">
+  <div class="container">
+    <h3>Ready to Make Your Move?</h3>
+    <p>Contact our expert team today.</p>
+    <a href="/contact" class="btn btn-light">Contact Us</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-light text-center py-4">
+  <p class="m-0">© 2026 HomeSpace. All Rights Reserved.</p>
+</footer>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/vendor/aos/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+</body>
+</html>

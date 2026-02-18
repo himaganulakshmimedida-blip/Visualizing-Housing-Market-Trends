@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <title>Housing Market Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}">
+  <style>
+.btn-warning {
+    transition: 0.3s ease;
+}
+
+.btn-warning:hover {
+    transform: scale(1.05);
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-dark bg-dark shadow">
+  <div class="container-fluid">
+    <span class="navbar-brand fw-bold">Housing Market Analysis</span>
+    <div>
+      <a href="/" class="text-white me-3">Home</a>
+      <a href="/dashboard" class="text-white me-3">Dashboard</a>
+      <a href="/about" class="text-white">About</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<!-- ===== HERO SECTION ===== -->
+<section class="d-flex align-items-center justify-content-center text-center text-white"
+        style="height: 60vh;
+               background: linear-gradient(to right, #0f2027, #203a43, #2c5364);">
+
+  <div class="container">
+    <h1 class="display-4 fw-bold text-white">
+  Housing Market Analysis Dashboard
+</h1>
+
+
+    <p class="lead mt-3">
+      Visualizing Housing Market Trends using Tableau
+    </p>
+
+    <a href="/dashboard"
+       class="btn btn-warning btn-lg mt-4 shadow">
+       View Dashboard
+    </a>
+  </div>
+
+</section>
+
+
+
+<!-- ===== STATS SECTION ===== -->
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <h2 class="fw-bold text-primary">21,609</h2>
+        <p>Total Records</p>
+      </div>
+
+      <div class="col-md-4">
+        <h2 class="fw-bold text-success">$511K</h2>
+        <p>Average Sale Price</p>
+      </div>
+
+      <div class="col-md-4">
+        <h2 class="fw-bold text-danger">44M+</h2>
+        <p>Total Basement Area (sq ft)</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECT OVERVIEW ===== -->
+<section class="py-5">
+  <div class="container text-center">
+
+    <h2 class="mb-4 fw-bold">Project Overview</h2>
+
+    <p class="mb-4">
+      This project analyzes key housing market factors including
+      renovation years, number of bedrooms, bathrooms, floors,
+      and house age to understand their impact on property sale prices.
+    </p>
+
+  </div>
+</section>
+
+<!-- ===== PROJECT HIGHLIGHTS ===== -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+
+    <h3 class="mb-5 fw-bold">Project Highlights</h3>
+
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <div class="p-4 shadow rounded bg-white">
+          <h5>📊 Data Analysis</h5>
+          <p>Analyzed 21,000+ housing records for meaningful insights.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="p-4 shadow rounded bg-white">
+          <h5>📈 Interactive Visualization</h5>
+          <p>Built dynamic dashboards using Tableau Public.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="p-4 shadow rounded bg-white">
+          <h5>💡 Business Insights</h5>
+          <p>Identified renovation and feature impact on sale price trends.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CALL TO ACTION ===== -->
+<section class="py-5 text-center bg-dark text-white">
+  <div class="container">
+    <h2 class="text-white fw-bold">
+  Explore the Full Interactive Dashboard
+</h2>
+
+    <a href="/dashboard" class="btn btn-warning btn-lg mt-3">
+      Open Dashboard
+    </a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <h5>Housing Market Analysis</h5>
+    <p class="mb-1">Visualizing Housing Trends using Tableau</p>
+    <small>© 2026 | Developed by M.H.G.Lakshmi</small>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+</body>
+</html>
